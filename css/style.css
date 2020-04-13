@@ -1,0 +1,178 @@
+
+@font-face {
+font-family: 'museo_sans_rounded100';
+src: url('../fonts/museosansrounded-100-webfont.woff2') format('woff2'),
+    url('../fonts/museosansrounded-100-webfont.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+
+}
+*{
+box-sizing: border-box;
+}
+html{
+font-size: 10px;
+}
+body{
+margin: 0;
+padding: 0;
+font-family: 'museo_sans_rounded100';
+font-size: 1.6rem;
+}
+
+
+.wrapper{
+min-height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.section--bg{
+min-height: 100vh;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+.container {
+max-width: 690px;
+width: 100%;
+
+}
+.container--bg{
+background-color:#111a28;
+padding: 20px 15px;
+border-radius: 15px;
+}
+
+.title__logo { 
+margin: 0;
+}
+.img { 
+max-width: 100%;
+}
+.row {
+display: flex;
+justify-content: space-between;
+
+}
+.col {
+width: 100%;
+}
+.col--1-5 { 
+margin-top: 50px;
+max-width: 370px;
+}
+.col--1--4 { 
+max-width: 250px;
+
+}
+.goods {
+display: none;
+overflow: hidden;
+max-height: 200px;
+min-height: 200px;
+padding-left: 20px;
+}
+.goods__img { 
+object-fit: cover;
+}   
+.pagination__input {
+display: none;
+}
+.pagination__list { 
+margin-top: 40px;
+text-align: center;
+}
+
+
+.pagination__input--1:checked ~ .pagination__list .fa-circle--grey,
+.pagination__input--2:checked ~ .pagination__list .fa-circle--white,
+.pagination__input--3:checked ~ .pagination__list .fa-circle--red,
+.pagination__input--4:checked ~ .pagination__list .fa-circle--blue
+{
+border: 3px solid #7a7e87 ;
+border-radius: 60%;
+}
+.pagination__input--1:checked ~ .goods--1,
+.pagination__input--2:checked ~ .goods--2,
+.pagination__input--3:checked ~ .goods--3,
+.pagination__input--4:checked ~ .goods--4
+{
+display: block;
+}
+.pagination__list-label { 
+font-size: 1.5rem;
+margin-right: 5px;
+line-height: 1;
+cursor: pointer;
+}
+.fa-circle--grey {
+color: #1f273f;
+}
+.fa-circle--white {
+color: #fff;
+}
+.fa-circle--red {
+color: #ed3333;
+}
+.fa-circle--blue { 
+color: #29e3ea;
+}
+
+
+
+
+
+.goods-description__name { 
+margin: 0;
+color: #e1e1e1;
+font-size: 2.4rem;
+}
+.goods-description__caption { 
+font-size: 1.4rem;
+color: #e1e1e1;
+display: inline-block;
+padding: 15px 0 20px 0;
+}
+
+.goods-description__variety {
+padding: 25px 0;
+}
+.goods-description__variety-sizes,
+.goods-description__variety-quantity { 
+    background: transparent;
+    font-size: 1.4rem;
+    font-family: 'museo_sans_rounded100';
+    padding: 10px;
+    color: #e1e1e1;
+    outline: none;
+    cursor: pointer;
+    border: 2px solid #4f5560;
+}
+
+.option--bg-color{
+background-color: #111a28;
+cursor: pointer;
+}
+.btn {
+display: inline-block;
+text-decoration: none;
+background-color: #202835;
+color: #e1e1e1;
+font-size: 1.4rem;
+padding: 13px 55px;
+border: 2px solid #4f5560;
+}
+.btn:hover{
+border-color: #29e3ea;
+color: #29e3ea;
+transition: border-color .3s ease-in,color .3s ease-in;
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,42 @@
+ .raiting{
+    display: flex;
+
+   
+ }
+ 
+ .raiting__input{
+     display: none;
+ }
+ .raiting__label{
+     display: block;
+     cursor: pointer;
+     width: 30px;
+ position: relative;
+ }
+ .raiting__label::before{
+     content: "\f005";
+     font-family:"fontAwesome"; 
+     display: block;
+     position: relative;
+    font-size:2rem; 
+     color: #9da1a6;
+} 
+.raiting__label::after{ 
+     content: "\f005";
+     font-family:"fontAwesome"; 
+     display: block;
+     position: absolute;
+     top:0;
+     font-size: 2rem; 
+     color: #f7bf16;
+     opacity: 0;
+     transition: .5s;
+     text-shadow: 0 2px 5px rgba(0, 0, 0, .5);
+    }  
+
+.raiting__label:hover::after,
+.raiting__label:hover ~ .raiting__label::after,
+.raiting__input:checked ~ .raiting__label::after 
+{
+    opacity: 1;
+}
