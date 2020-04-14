@@ -1,39 +1,39 @@
 .raiting{
 display: flex;
 flex-direction: row-reverse;
-    max-width: 150px;
+max-width: 150px;
+
 }
 
 .raiting__input{
-    display: none;
+display: none;
 }
 .raiting__label{
-margin-right: auto;
-    display: block;
-    cursor: pointer;
-    width: 30px;
+display: block;
+cursor: pointer;
+width: 30px;
 position: relative;
 }
 .raiting__label::before{
-    content: "\f005";
-    font-family:"fontAwesome"; 
-    display: block;
-    position: relative;
+content: "\f005";
+font-family:"fontAwesome"; 
+display: block;
+position: relative;
 font-size:2rem; 
-    color: #9da1a6;
-    
+color: #9da1a6;
+
 } 
 .raiting__label::after{ 
-    content: "\f005";
-    font-family:"fontAwesome"; 
-    display: block;
-    position: absolute;
-    top:0;
-    font-size: 2rem; 
-    color: #f7bf16;
-    opacity: 0;
-    transition: .5s;
-    text-shadow: 0 2px 5px rgba(0, 0, 0, .5);
+content: "\f005";
+font-family:"fontAwesome"; 
+display: block;
+position: absolute;
+top:0;
+font-size: 2rem; 
+color: #f7bf16;
+opacity: 0;
+transition: .5s;
+text-shadow: 0 2px 5px rgba(0, 0, 0, .5);
 }  
 
 .raiting__label:hover::after,
